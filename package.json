@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "lerna": "^2.0.0-rc.4",
+    "standard": "^10.0.2"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "test": "lerna bootstrap && lerna run test"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "m17n",
+  "version": "1.0.0",
+  "description": "Multilingualization utilities using ICU MessageFormat",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "keywords": [
+    "m17n",
+    "multilingualization",
+    "i18n",
+    "internationalization",
+    "l10n",
+    "localization",
+    "translation",
+    "language",
+    "messageformat"
+  ],
+  "author": "Alethea Rose <alethea@alethearose.com>",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alethea/m17n.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alethea/m17n/issues"
+  },
+  "homepage": "https://github.com/alethea/m17n/tree/master/packages/m17n#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
