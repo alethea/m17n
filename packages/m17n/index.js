@@ -1,5 +1,4 @@
 /**
- * @file m17n
  * @author Alethea Rose <alethea@alethearose.com>
  * @copyright Copyright © Alethea Rose, 2017.
  * @license AGPL-3.0

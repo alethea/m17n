@@ -4,8 +4,12 @@
   "description": "Multilingualization utilities using ICU MessageFormat",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard && mocha"
   },
+  "files": [
+    "lib/",
+    "index.js"
+  ],
   "keywords": [
     "m17n",
     "multilingualization",
@@ -29,7 +33,12 @@
   "homepage": "https://github.com/alethea/m17n/tree/master/packages/m17n#readme",
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
+      "path": "../../node_modules/cz-conventional-changelog"
     }
+  },
+  "devDependencies": {
+    "chai": "3.x",
+    "mocha": "3.x",
+    "standard": "10.x"
   }
 }

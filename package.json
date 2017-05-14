@@ -1,8 +1,10 @@
 {
   "devDependencies": {
+    "chai": "^3.5.0",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "lerna": "^2.0.0-rc.4",
+    "mocha": "^3.3.0",
     "standard": "^10.0.2"
   },
   "scripts": {
