@@ -1,3 +1,4 @@
+'use strict'
 /**
  * @author Alethea Rose <alethea@alethearose.com>
  * @copyright Copyright © Alethea Rose, 2017.
