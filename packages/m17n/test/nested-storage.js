@@ -1,5 +1,6 @@
 /* eslint-env mocha */
 /* eslint no-unused-expressions: "off" */
+'use strict'
 const expect = require('chai').expect
 const NestedStorage = require('../lib/nested-storage')
 

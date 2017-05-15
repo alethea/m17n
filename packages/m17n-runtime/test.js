@@ -1,4 +1,5 @@
 /* eslint-env mocha */
+'use strict'
 const expect = require('chai').expect
 const M17n = require('.')
 
@@ -179,19 +180,19 @@ describe('M17n', function () {
     })
 
     it('formats percent by %', function () {
-      expect(m17n.n(1.123, '%')).to.equal('112%')
+      expect(m17n.n(1.12, '%')).to.equal('112%')
     })
 
     it('formats default currency', function () {
-      expect(m17n.n(10.0, 'currency')).to.equal('$10.00')
+      expect(m17n.n(10.01, 'currency')).to.equal('$10.01')
     })
 
     it('formants default currency by $', function () {
-      expect(m17n.n(3, '$')).to.equal('$3.00')
+      expect(m17n.n(3.45, '$')).to.equal('$3.45')
     })
 
     it('formats by currency code', function () {
-      expect(m17n.n(1.2, 'EUR')).to.equal('€1.20')
+      expect(m17n.n(1.23, 'EUR')).to.equal('€1.23')
     })
 
     it('formats by padding', function () {
