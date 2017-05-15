@@ -40,5 +40,8 @@
     "chai": "3.x",
     "mocha": "3.x",
     "standard": "10.x"
+  },
+  "dependencies": {
+    "m17n-runtime": "^1.0.0",
   }
 }

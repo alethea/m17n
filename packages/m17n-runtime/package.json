@@ -1,0 +1,32 @@
+{
+  "name": "m17n-runtime",
+  "version": "1.0.0",
+  "description": "Runtime for the m17n project",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alethea/m17n.git"
+  },
+  "author": "Alethea Rose <alethea@alethearose.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/alethea/m17n/issues"
+  },
+  "homepage": "https://github.com/alethea/m17n/tree/master/packages/m17n-runtime#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "chai": "3.x",
+    "mocha": "3.x",
+    "standard": "10.x"
+  }
+}
