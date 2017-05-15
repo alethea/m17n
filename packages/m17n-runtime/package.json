@@ -7,7 +7,8 @@
     "index.js"
   ],
   "scripts": {
-    "test": "standard && mocha"
+    "pretest": "standard",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",

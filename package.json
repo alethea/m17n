@@ -9,7 +9,8 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "test": "lerna bootstrap && lerna run test"
+    "pretest": "lerna bootstrap",
+    "test": "lerna run test"
   },
   "config": {
     "commitizen": {
