@@ -23,7 +23,7 @@
   ]
 
   function M17n (locale, defaultCurrency, pluralFn, catalog) {
-    this.locale = locale
+    this.l = locale
     this.pfn = pluralFn
     this.cur = defaultCurrency
     this.dat = catalog
@@ -82,7 +82,7 @@
 
     if (!format) {
       format = this.df[formatIndex] = new Intl.DateTimeFormat(
-        this.locale, dateTimeFormats[formatIndex]
+        this.l, dateTimeFormats[formatIndex]
       )
     }
 
@@ -97,26 +97,31 @@
 
     if (!id) {
       id = decimal
-    } else if (id === '%') {
-      id = percent
-    } else if (id === '$') {
+    } else if (id === -1) {
       id = currency
+    } else if (id === -2) {
+      id = percent
     }
     var format = this.nf[id]
 
     if (!format) {
-      if (typeof id === 'number') {
-        format = new NumberFormat(this.locale, {
+      if (typeof id === 'number' && id > 0) {
+        format = new NumberFormat(this.l, {
           style: decimal,
           minimumIntegerDigits: id
         })
       } else if (id === decimal || id === percent || id === currency) {
-        format = new NumberFormat(this.locale, {
+        format = new NumberFormat(this.l, {
           style: id,
           currency: this.cur
         })
+      } else if (id === 0) {
+        format = new NumberFormat(this.l, {
+          style: decimal,
+          maximumFractionDigits: 0
+        })
       } else {
-        format = new NumberFormat(this.locale, {
+        format = new NumberFormat(this.l, {
           style: currency,
           currency: id
         })

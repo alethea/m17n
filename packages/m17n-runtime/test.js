@@ -179,16 +179,16 @@ describe('M17n', function () {
       expect(m17n.n(0.2, 'percent')).to.equal('20%')
     })
 
-    it('formats percent by %', function () {
-      expect(m17n.n(1.12, '%')).to.equal('112%')
+    it('formats percent by -2', function () {
+      expect(m17n.n(1.12, -2)).to.equal('112%')
     })
 
     it('formats default currency', function () {
       expect(m17n.n(10.01, 'currency')).to.equal('$10.01')
     })
 
-    it('formants default currency by $', function () {
-      expect(m17n.n(3.45, '$')).to.equal('$3.45')
+    it('formants default currency by -1', function () {
+      expect(m17n.n(3.45, -1)).to.equal('$3.45')
     })
 
     it('formats by currency code', function () {
